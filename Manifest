@@ -1,0 +1,9 @@
+lib/activation_functions.rb
+lib/neurotic.rb
+lib/perceptron.rb
+lib/synapse.rb
+Manifest
+Rakefile
+README.rdoc
+tasks/neurotic.rake
+neurotic.gemspec
