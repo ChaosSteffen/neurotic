@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 module ActivationFunctions
   def logistic net
     1 / (1 + Math::E**( (-1)*net ) )

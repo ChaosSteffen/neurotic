@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 require 'lib/neurotic'
  
 task :train_or do

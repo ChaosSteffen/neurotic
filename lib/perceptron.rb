@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 class Perceptron
   include ActivationFunctions
   @synapses
@@ -29,7 +31,7 @@ class Perceptron
   
   #Training
   def train input=[], output=1
-    raise "Größe der Trainigsdaten stimmt nicht." if input.size != @synapses.size
+    raise "size of traindata does not correspond with input size" if input.size != @synapses.size
 
     @synapses.each_with_index { |synapse, i|
       synapse.x = input[i]
