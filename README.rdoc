@@ -8,6 +8,8 @@ Create artificial neuronal nets.
   
 == Usage
   
+  require 'neurotic'
+  
   LEARNRATE = 1
 
   # Lernen der ODER Prädikats
