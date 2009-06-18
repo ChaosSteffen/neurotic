@@ -56,4 +56,14 @@ class Perceptron
     # Schwellwert trainieren
     @bias -= LEARNRATE * error
   end
+  
+  def recall input=[]
+    raise "size of traindata does not correspond with input size" if input.size != @synapses.size
+    
+    @synapses.each_with_index { |synapse, i|
+      synapse.x = input[i]
+    }
+    self.a()
+    
+  end
 end
