@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 class Perceptron
-  include ActivationFunctions
   @synapses
   @bias # Schwellwert
   @f # Aktivierungsfunktion
@@ -12,7 +11,7 @@ class Perceptron
     @do_trace = options[:trace] ||= false
     
     if options[:activation_function].is_a? Symbol
-      @f = method options[:activation_function]
+      @f = ActivationFunctions.method options[:activation_function]
     end
     
     if options[:synapses].is_a? Integer
