@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Steffen Schr\303\266der"]
-  s.date = %q{2009-06-18}
+  s.date = %q{2009-06-19}
   s.description = %q{Create artificial neuronal nets.}
   s.email = %q{steffen@schroeder-blog.de}
   s.extra_rdoc_files = [
@@ -23,6 +23,11 @@ Gem::Specification.new do |s|
      "lib/perceptron.rb",
      "lib/synapse.rb",
      "neurotic.gemspec",
+     "spec/neurotic/activation_functions_spec.rb",
+     "spec/neurotic/neurotic_spec.rb",
+     "spec/neurotic/perceptron_spec.rb",
+     "spec/spec.opts",
+     "spec/spec_helper.rb",
      "tasks/neurotic.rake"
   ]
   s.homepage = %q{http://github.com/santino/neurotic}
